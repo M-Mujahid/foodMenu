@@ -1,0 +1,221 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffb60057;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+}
+
+.navbar {
+  margin-left: auto;
+  width: 100%;
+  margin-right: auto;
+}
+
+.topHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+  font-family: math;
+  font-size: 39px;
+  color: #610202cc;
+  margin-bottom: 1%;
+}
+.ourMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 24px;
+  width: max-content;
+  font-family: serif;
+  border: black;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+.ourMenu:hover {
+  border: black;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  padding: 6px;
+  transition: all 1s;
+}
+.navPara {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 400;
+  font-family: math;
+  margin-bottom: 1%;
+}
+
+.menuInput {
+  width: 80%;
+  height: 33px;
+  border-radius: 7px;
+  padding-left: 13px;
+  outline: none;
+  border: 2px solid #813535;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4%;
+}
+.input::placeholder{
+  color: #813535;
+}
+
+
+/* menuDiv */
+
+.singlemenudiv{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 10px 15px;
+    position: relative;
+}
+
+.menudiv{
+    width: 80vw;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.imagediv img{
+    width: 130px;
+    height: 130px;
+    margin-right: 15px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.likesofdiv{
+    position: absolute;
+    bottom: 10px;
+}
+
+.headingofdiv{
+    font-weight: 700;
+    font-size: large;
+    font-family: 'Courier New';
+    margin-bottom: 5px;
+}
+
+.textcontentofdiv{
+    width: 35%;
+    word-wrap: break-word;
+}
+
+.descriptionofdiv{
+    height: 50px;
+    margin-bottom: 50px;
+    overflow:hidden ;
+}
+
+.menuDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.maindiv {
+  margin: auto;
+  width: 100vh;
+  height: 50vh;
+  overflow-y: auto;
+}
+
+
+/* For Chrome, Safari, and other webkit-based browsers */
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background: #813535; /* Set the background color of the thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Scrollbar Track on Hover */
+::-webkit-scrollbar-track:hover {
+  background: #aaa; /* Change track background color on hover */
+}
+
+/* Scrollbar Thumb on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change thumb background color on hover */
+}
+
+
+
+
+/* FOOTER */
+.footerPara {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+}
+.footerbtn {
+  display: flex;
+  justify-content: center;
+}
+.footerButton {
+  width: 11%;
+  padding: 5px 18px;
+  border: 2px solid #813024;
+  border-radius: 9px;
+  background: #813024;
+  cursor: pointer;
+  color: #ffe6a8;
+}
+
+@media (max-width: 750px) {
+  .menudiv{
+      width: 100vw;
+  }
+}
+
+@media (max-width: 610px) {
+  .singlemenudiv{
+      width: 100vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .singlemenudiv{
+      width: 100vw;
+  }
+  .container {
+    width: 100vh;
+}
+
+.navPara {
+  font-size: initial;
+  width: 85%;
+  text-align: center;
+}
+}
